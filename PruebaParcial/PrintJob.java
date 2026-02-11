@@ -34,13 +34,6 @@ public class PrintJob {
         this.pages = pages;
     }
 
-    // public LocalTime getHora() {
-    //     return hora;
-    // }
-    // public void setHora(LocalTime hora) {
-    //     this.hora = hora;
-    // }
-
     public char getPriority() {
         return priority;
     }
@@ -66,4 +59,5 @@ public class PrintJob {
             " | Paginas: " + pages +
             " | Prioridad: " + priority;
     }
+
 }
