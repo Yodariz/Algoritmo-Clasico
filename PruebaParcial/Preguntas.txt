@@ -1,0 +1,54 @@
+Opción A:
+Una cola de prioridad usando tres colas simples:
+- Una para prioridad H
+- Una para prioridad M
+- Una para prioridad L
+
+Opción B:
+Una sola lista enlazada ordenada por prioridad, donde cada nuevo trabajo se inserta en la posición
+correcta.
+
+Pregunta
+
+1. Para cada opción (A y B), determine la complejidad asintótica de las operaciones:
+a. enqueue
+O(1)
+Ω(1)
+Θ(1)
+Esto es debido a que solo inserta  final de la cola
+
+b. dequeue
+O(1)
+Ω(1)
+Θ(1)
+porque revisas cada uni y sacas la importancia
+
+Para la segunda operacion
+enqueue
+O(n)
+Ω(1)
+Θ(n)
+Creo que el peor caso es cuando tiene que recorre toda la lista para agregar
+
+dequeue
+O(1)
+Ω(1)
+Θ(1)
+En este caso es mas facil porque siempre puedes sacra el primero
+
+
+Debe expresar cada una usando:
+c. Notación O (cota superior)
+d. Notación Ω (cota inferior)
+e. Notación Θ (cota ajustada, si aplica)
+
+2. Suponga que el sistema recibe N trabajos y luego los procesa todos.
+Para cada opción:
+a. Determine la complejidad total del proceso completo:
+i. Insertar los N trabajos.
+ii. Procesar los N trabajos.
+b. Exprese el resultado usando notación asintótica.
+3. Basándose en su análisis:
+a. ¿Cuál implementación es más eficiente en el peor caso?
+b. ¿Cuál sería más simple de mantener?
+c. Justifique su respuesta con argumentos de complejidad y diseño.
