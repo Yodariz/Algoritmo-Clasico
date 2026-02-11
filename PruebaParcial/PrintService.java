@@ -21,7 +21,6 @@ public class PrintService {
         }
     }
 
-    //Verificar existencia
     public void processAll(){
         while(!cola.isEmpty()){
             processNext();
@@ -30,3 +29,4 @@ public class PrintService {
         return;
     }
 }
+
