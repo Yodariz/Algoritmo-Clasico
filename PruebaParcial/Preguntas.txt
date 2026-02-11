@@ -15,27 +15,26 @@ a. enqueue
 O(1)
 Ω(1)
 Θ(1)
-Esto es debido a que solo inserta  final de la cola
+Es mas facil debido a que cada uno se inserta a su cola correspondiente segun su prioridad
 
 b. dequeue
 O(1)
 Ω(1)
 Θ(1)
-porque revisas cada uni y sacas la importancia
+paara eliminarlo tambien es facil porque se elimina de cada una de ellas, es ccostante el tiempo.
 
 Para la segunda operacion
 enqueue
 O(n)
 Ω(1)
 Θ(n)
-Creo que el peor caso es cuando tiene que recorre toda la lista para agregar
+Es un poco mas dificil agregarlo porque tienes que comparar cada uno paara colocarlo segun la importancia que tenga 
 
 dequeue
 O(1)
 Ω(1)
 Θ(1)
-En este caso es mas facil porque siempre puedes sacra el primero
-
+Para eliminarlo es facil debido a que se saca el primero, ya que ya está ordenado.
 
 Debe expresar cada una usando:
 c. Notación O (cota superior)
@@ -45,20 +44,30 @@ e. Notación Θ (cota ajustada, si aplica)
 2. Suponga que el sistema recibe N trabajos y luego los procesa todos.
 Para cada opción:
 a. Determine la complejidad total del proceso completo:
-    en la primera opcion
-    Es mas facil debido a que cada uno se inserta a su cola correspondiente segun su prioridad
-    paara eliminarlo tambien es facil porque se elimina de cada una de ellas, es ccostante el tiempo.
-
-    en la segunda
-    Es un poco mas dificil agregarlo porque tienes que comparar cada uno paara colocarlo segun la importancia que tenga 
-    y luego reordenarlo.
-    Para eliminarlo es facil debido a que se saca el primero, ya que ya está ordenado.
-
 i. Insertar los N trabajos.
 ii. Procesar los N trabajos.
 b. Exprese el resultado usando notación asintótica.
+
+    en la primera opcion
+    Cada trabajo agregado es O(1) asi que es O(n)
+    Para la eliminacion es igual y es O(n)
+    y totalmente la complejidad es O(n)
+
+    en la segunda
+    Cada trabajo que agrego es de O(n^2)
+    Para procesarlo es O(n) lineal
+    y su complejidad total es O(n)
+
+
 3. Basándose en su análisis:
 a. ¿Cuál implementación es más eficiente en el peor caso?
+En la primera opcion es mas eficiente ya que la inserccion  y procesar cada trabajo es constante.
+En la segunda opcion no es igual, ya que es necesario recorrer toda la lista y el costo de operación es de O(n).
+Por lo que concluyo, que la primera opcion es el mejor para los peores casos, siendo mas eficiente que el segundo que puede requerir el doble.
+
 b. ¿Cuál sería más simple de mantener?
+La opcion A ya que es mas facil mantener y utilizar tres colas y la agregacion es directa.
 
 c. Justifique su respuesta con argumentos de complejidad y diseño.
+La opcion A es mas eficiente y ademas facil porque puede realizwar operaciones constantemente.
+Ademas, su estructura es clara lo que facilita su implementacion y depuracion.
